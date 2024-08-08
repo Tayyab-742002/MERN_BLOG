@@ -1,0 +1,75 @@
+:root[data-theme="light"] {
+  --text: #000000;
+  --background: #e8e8e8;
+  --primary: #dc2828;
+  --secondary: #bababa;
+  --accent: #c7c7c7;
+}
+:root[data-theme="dark"] {
+  --text: #ffffff;
+  --background: #171717;
+  --primary: #d72323;
+  --secondary: #454545;
+  --accent: #383838;
+  --secondary10: #1c1c1c;
+  --ck-color-base-foreground: hsl(0, 93%, 45%);
+  --ck-color-base-background: var(--secondary10);
+  --ck-color-base-border: var(--accent);
+  --ck-color-base-action: hsl(104, 50.2%, 42.5%);
+  --ck-color-base-focus: var(--accent);
+  --ck-color-base-text: var(--text);
+  --ck-color-base-active: var(--accent);
+  --ck-color-base-active-focus: var(--accent);
+  --ck-color-base-error: hsl(15, 100%, 43%);
+  --ck--innder-shadow: var(--primary);
+  --ck-color-button-on-color: var(--text);
+  --ck-color-button-on-active-background: var(--primary);
+  --ck-color-button-on-hover-background: var(--primary);
+  --ck-color-light-red: var(--primary);
+  --ck-color-input-disabled-background: var(--primary);
+  --ck-color-switch-button-off-hover-background: var(--primary);
+  --ck-color-switch-button-off-background: var(--primary);
+  --ck-color-button-default-background: var(--accent);
+  --ck-color-button-default-active-background: var(--primary);
+  --ck-color-button-default-hover-background: var(--primary);
+  --ck-color-focus-outer-shadow: none;
+  --ck-color-button-on-background: var(--primary);
+  --ck-color-button-on-hover-background: var(--primary);
+  --ck-color-button-on-active-background: var(--primary);
+  --ck-color-button-on-disabled-background: var(--primary);
+  --ck-color-input-disabled-background: var(--primary);
+  --ck-focus-ring: none;
+  /* --ck-color-button-on-color: var(--primary); */
+
+}
+
+:root {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.error {
+  color: var(--primary);
+  font-weight: bold;
+}
+.ck {
+  height: 500px;
+}
+.react-tagsinput {
+  background-color: var(--secondary10);
+  border: 1px solid var(--accent);
+  margin-top: 1rem;
+}
+.react-tagsinput-tag {
+color: var(--text);
+background-color: var(--accent);
+border: none;
+}

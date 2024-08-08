@@ -1,0 +1,70 @@
+.login-container {
+  background-color: var(--secondary10);
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  width: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 1.5rem;
+  /* border: 1px solid red; */
+  .login-logo-wrap {
+    .login-logo {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .input-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+  }
+  .login-already {
+    
+    p {
+      display: inline;
+      color: #fff5;
+      font-size: 0.8rem;
+      margin-right: 5px;
+    }
+    .signup-link {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  }
+  .login-or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    div {
+      border: 1px solid var(--accent);
+      width: 100%;
+      margin: 0px 10px;
+    }
+    span {
+      color: var(--accent);
+      margin: 0px 10px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px),
+  (min-width: 1025px) and (max-width: 1280px),
+  (min-width: 1281px) {
+  .login-container {
+    width: 400px;
+    .input-fields {
+      width: 300px;
+    }
+  }
+}

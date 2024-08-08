@@ -1,0 +1,25 @@
+.post-form-container {
+  width: 100%;
+  .post-form {
+    /* border-right: 1px solid var(--accent);
+    border-left: 1px solid var(--accent); */
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    .sec-1 .input-wrapper,
+    .sec-2 .input-wrapper {
+      margin: 1.5rem 0rem;
+      border: 2px solid var(--accent);
+    }
+  }
+}
+
+.selected-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+

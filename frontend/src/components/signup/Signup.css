@@ -1,0 +1,89 @@
+.signup-container {
+  background-color: var(--secondary10);
+  padding: 1rem 3rem;
+  /* margin: 0 auto; */
+  margin-inline: auto;
+  width: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 0.5rem;
+  /* border: 1px solid red; */
+
+  .signup-logo-wrap {
+    .signup-logo {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .signup-input-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    gap: 1rem;
+    .profile-imgage-upload {
+      background-color: transparent !important;
+      font-size: 0px !important;
+    }
+    .profile-imgage-upload::file-selector-button {
+      color: #fff9;
+      background-color: transparent;
+      border: 1px solid var(--accent);
+      border: none;
+      border-radius: 3px;
+    }
+    .profile-imgage-upload::before {
+      content: "Select Avatar";
+      cursor: pointer;
+      color: #fff5;
+      font-weight: inherit;
+
+      font-size: 0.8rem;
+    }
+  }
+  .signup-already {
+    p {
+      display: inline;
+      color: #fff5;
+      font-size: 0.8rem;
+      margin-right: 3px;
+    }
+    .login-link {
+      text-decoration: none;
+      color: var(--primary);
+    }
+  }
+  .signup-or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    div {
+      border: 1px solid var(--accent);
+      width: 100%;
+      margin: 0px 10px;
+    }
+    span {
+      color: var(--accent);
+      margin: 0px 10px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px),
+  (min-width: 1025px) and (max-width: 1280px),
+  (min-width: 1281px) {
+  .signup-container {
+    width: 400px;
+    .signup-input-fields {
+      width: 300px;
+    }
+  }
+}

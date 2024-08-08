@@ -1,0 +1,18 @@
+.category-page-container {
+    .category-page-header {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      .category-page-icon {
+        width: 3rem;
+        height: 3rem;
+        color: #ccc;
+      }
+      .category-page-title {
+          margin-left:0.5rem ;
+          font-size: xx-large;
+          font-weight: bolder;
+          color: #ccc;
+      }
+    }
+  }

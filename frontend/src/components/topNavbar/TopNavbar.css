@@ -1,0 +1,78 @@
+.top-nav-wrapper {
+  background-color: var(--secondary10);
+  /* padding: 1rem; */
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  padding: 0.5rem 1rem;
+  /* box-shadow: var(--boxshadow); */
+  border-bottom: 1px solid var(--accent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  /* top nav right starts here  */
+  .top-nav-right {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .top-nav-btn-post {
+      text-decoration: none;
+      background-color: var(--accent);
+      border-color: var(--accent);
+      &:hover {
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: transform 0.1s ease-in-out;
+      }
+    }
+    .top-nav-avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.1s ease-in-out;
+      }
+    }
+    .top-nav-author-dropdown {
+      ul {
+        border-radius:10px ;
+        padding: 0.5rem;
+        width: 200px;
+        height: 150px;
+        border: 2px solid var(--accent);
+        background-color: var(--secondary10);
+        text-decoration: none;
+        list-style: none;
+      }
+    }
+    .top-nav-author-dropdown-btn {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  .top-nav-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .top-nav-search {
+    .input-wrapper {
+      &:focus-within {
+        transform: scale(1.05);
+        transition: transform 0.1s ease-in-out;
+      }
+    }
+    width: 30%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px), (min-width: 1281px) {
+  .top-nav-wrapper {
+    display: flex;
+  }
+}
